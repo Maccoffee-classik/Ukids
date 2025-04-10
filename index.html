@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width" name="viewport">
     <title>Ukids Email</title>
     <style>
         body {
@@ -18,26 +19,47 @@
             outline: none;
             text-decoration: none;
         }
-        @media only screen and (max-width: 700px) {
+        @media only screen and (max-width: 360px) {
             .container {
                 width: 100% !important;
             }
+
             .mobile-center {
                 text-align: center !important;
             }
+
             .logo {
-                margin: 0 auto!important;
+                margin: 0 auto !important;
             }
 
-            .stack {
+            td,
+            div {
+                display: block !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+            }
+
+            .stack-table {
                 display: block !important;
                 width: 100% !important;
             }
-            .stack img {
-                margin: 0 auto !important;
-            }
-            .mobile-center {
+
+            .stack-td {
+                display: block !important;
+                width: 100% !important;
                 text-align: center !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            .content-padding {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+
+            img {
+                max-width: 100% !important;
+                height: auto !important;
             }
         }
     </style>
