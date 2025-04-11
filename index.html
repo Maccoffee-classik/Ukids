@@ -38,8 +38,12 @@
             display: inline-block;
             margin-bottom: 5px;
         }
+        .desk-bg { display: table !important; }
+        .mob-bg { display: none !important; }
 
         @media only screen and (max-width: 700px) {
+            .desk-bg { display: none !important; }
+            .mob-bg { display: table !important; }
             .lamp {
                 display: none!important;
             }
@@ -179,13 +183,24 @@
                                                 <img  class="lamp" src="lamp.png" alt="Лампочка" width="87" style="display: block;">
                                             </td>
                                             <td>
-                                                <table class ="bg_dashedmob"cellpadding="0" cellspacing="0" background="bd_dashed.png" style="background-repeat: no-repeat; background-size: cover; border-radius: 12px;">
+
+                                                <table class="desk-bg" cellpadding="0" cellspacing="0" background="bd_dashed.png" style="background-repeat: no-repeat; background-size: cover; border-radius: 12px;">
                                                     <tr>
-                                                        <td class ="bg_dashedmob_text" style="padding:23px 28px; font-weight: 600; font-size: 18px; line-height: 100%; text-align: center; color: #242424;">
+                                                        <td style="padding:23px 28px; font-weight: 600; font-size: 18px; line-height: 100%; text-align: center; color: #242424;">
                                                             Занятия будут проходить<br>на площадке Геткурс.
                                                         </td>
                                                     </tr>
                                                 </table>
+
+                                                <!-- 📱 Мобильная версия -->
+                                                <table class="mob-bg" cellpadding="0" cellspacing="0" background="bg_dashedmob.png" style="display: none; background-repeat: no-repeat; background-size: cover; border-radius: 12px;">
+                                                    <tr>
+                                                        <td style="padding:13px 59px 52px 17px; font-weight: 600; font-size: 16px; line-height: 130%; text-align: center; color: #242424;">
+                                                            Занятия будут проходить<br>на площадке Геткурс.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
                                             </td>
                                         </tr>
                                     </table>
