@@ -8,10 +8,15 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: #ffffff;
         }
         table {
             border-collapse: collapse;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            width: 100%;
         }
         img {
             display: block;
@@ -19,8 +24,31 @@
             outline: none;
             text-decoration: none;
         }
+        .receipt {
+            background: url('bg_2.jpg') no-repeat bottom right;
+            background-size: 90px, cover;
+            border-radius: 6px;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #1e1e1e;
+        }
+        .receipt strong {
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
         @media only screen and (max-width: 360px) {
+            .lamp {
+                display: none!important;
+            }
+            .banner_title {
+                padding-left: 0!important;
+                font-size: 24px!important;
+            }
             .container {
+                max-width: 340px!important;
                 width: 100% !important;
             }
 
@@ -61,12 +89,56 @@
                 max-width: 100% !important;
                 height: auto !important;
             }
+            .stack {
+                display: block !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+            }
+            .container {
+                width: 100% !important;
+            }
+            .receipt-table {
+                width: 100% !important;
+                background-size: 60px !important;
+                padding: 16px !important;
+                background: url("bg_mob_2.jpg") no-repeat!important;
+            }
+            .cta-block {
+                padding: 24px 20px !important;
+            }
+
+            .cta-text {
+                font-size: 18px !important;
+                line-height: 130% !important;
+            }
+
+            .cta-button a {
+                font-size: 16px !important;
+                padding: 14px 24px !important;
+            }
+            .stack {
+                padding: 0 20px 0 20px!important;
+            }
+            .sum {
+                padding-bottom: 30px!important;
+            }
+            .title_text {
+                padding-bottom: 20px!important;
+            }
+            .bg_dashedmob {
+                background: url("bg_dashedmob.png") no-repeat !important;
+            }
+            .palitr {
+                display: none!important;
+            }
+
+            .bg_dashedmob_text {padding: 11px 30px 59px 10px!important;}
+
         }
     </style>
 </head>
 <body>
-<table class="container" align="center" width="700" cellpadding="0" cellspacing="0" style="max-width: 700px;     margin-top: 10px;
-    margin-bottom: 10px;">
+<table class="container" align="center" width="700" cellpadding="0" cellspacing="0" style="max-width:680px;     margin-top: 10px; ">
     <tr>
         <td background="bg_1.jpg" style="background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 20px; padding: 30px;">
             <table width="100%" cellpadding="0" cellspacing="0" style="font-family: Arial, sans-serif;">
@@ -85,7 +157,7 @@
                                 <!-- Левая часть: заголовок и блок с фоном -->
                                 <td style="padding-right: 20px;">
                                     <!-- Заголовок -->
-                                    <div style="padding-top: 30px; font-weight: bold; font-size: 32px; line-height: 90%; text-align:center; color: #242424;     padding-left: 80px;">
+                                    <div class="banner_title" style="padding-top: 30px; font-weight: bold; font-size: 32px; line-height: 90%; text-align:center; color: #242424;     padding-left: 80px;">
                                         Поздравляем! Курс «Дети,<br>которые делают уроки сами» успешно оплачен.
                                     </div>
 
@@ -93,12 +165,12 @@
                                     <table align="left" cellpadding="0" cellspacing="0" style="margin-top: 30px;">
                                         <tr>
                                             <td align="center" valign="middle" style="padding-right: 80px; padding-left: 10px;">
-                                                <img src="lamp.png" alt="Лампочка" width="87" style="display: block;">
+                                                <img  class="lamp" src="lamp.png" alt="Лампочка" width="87" style="display: block;">
                                             </td>
                                             <td>
-                                                <table cellpadding="0" cellspacing="0" background="bd_dashed.png" style="background-repeat: no-repeat; background-size: cover; border-radius: 12px;">
+                                                <table class ="bg_dashedmob"cellpadding="0" cellspacing="0" background="bd_dashed.png" style="background-repeat: no-repeat; background-size: cover; border-radius: 12px;">
                                                     <tr>
-                                                        <td style="padding:23px 28px; font-weight: 600; font-size: 18px; line-height: 100%; text-align: center; color: #242424;">
+                                                        <td class ="bg_dashedmob_text" style="padding:23px 28px; font-weight: 600; font-size: 18px; line-height: 100%; text-align: center; color: #242424;">
                                                             Занятия будут проходить<br>на площадке Геткурс.
                                                         </td>
                                                     </tr>
@@ -110,13 +182,82 @@
 
                                 <!-- Правая часть: палитра -->
                                 <td align="right" valign="top" style="padding-top: 80px;">
-                                    <img src="palitr.png" alt="Палитра" width="118" style="display: block;">
+                                    <img class="palitr" src="palitr.png" alt="Палитра" width="118" style="display: block;">
                                 </td>
                             </tr>
                         </table>
                     </td>
                 </tr>
 
+            </table>
+        </td>
+    </tr>
+</table>
+
+    <table class="container" align="center" cellpadding="0" cellspacing="0" width="700" style="max-width: 680px; margin-top: 10px;
+    margin-bottom: 10px;">
+        <tr>
+            <td style="padding: 0;">
+                <table class="receipt-table" cellpadding="0" cellspacing="0" width="100%" background="bg_2.jpg" style=" background-repeat: no-repeat; background-position: bottom right; background-size: 100%;  font-family: Arial, sans-serif; padding: 0px;">
+                    <tr>
+                        <td  colspan="2" class="title_text text" style="  padding-left: 40px; padding-top: 30px;   font-weight: bold; font-size: 24px;line-height: 90%;text-align: left; color: #242424;">
+                            Квитанция об оплате
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- Левая колонка -->
+                        <td class="stack" valign="top" style="padding-right: 20px; padding-left: 40px; padding-bottom: 34px; padding-top: 20px; width: 50%;">
+                            <table cellpadding="0" cellspacing="0" width="100%">
+                                <tr><td class="text" style="padding-bottom: 10px;"><strong>Номер заказа:</strong> 0409</td></tr>
+                                <tr><td class="text" style="padding-bottom: 10px;"><strong>Состав заказа:</strong> продукт</td></tr>
+                                <tr><td class="text" style="padding-bottom: 10px;"><strong>Кол-во позиций:</strong> 1</td></tr>
+                                <tr><td class="text" style="padding-bottom: 10px;"><strong>Стоимость заказа:</strong> 3490 руб.</td></tr>
+                                <tr><td class="text" style="padding-bottom: 10px;"><strong>Оплачен:</strong> полная оплата</td></tr>
+                            </table>
+                        </td>
+
+                        <!-- Правая колонка -->
+                        <td class="stack" valign="top" style="width: 50%; padding-right: 20px;  padding-bottom: 34px; padding-top: 20px; ">
+                            <table cellpadding="0" cellspacing="0" width="100%">
+                                <tr><td class="text" style="padding-bottom: 10px;"><strong>Форма расчёта:</strong> безналичный расчет</td></tr>
+                                <tr><td class="text" style="padding-bottom: 10px;"><strong>Место расчета:</strong> место расчета</td></tr>
+                                <tr><td class="text" style="padding-bottom: 10px;"><strong>Адрес электронной почты покупателя:</strong><br>адрес</td></tr>
+                                <tr><td class="text sum" style="padding-top: 10px; font-weight: bold;">Сумма оплаты: 3490 руб.</td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+<table align="center" width="700" cellpadding="0" cellspacing="0" class="container" style="max-width: 680px; width: 100%;">
+    <tr>
+        <td align="center" style="padding: 0;">
+            <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#ba90ff" style="border-radius: 24px;" class="cta-block">
+                <tr>
+                    <td align="center" style="padding: 30px 40px;">
+                        <!-- Текст -->
+                        <div class="cta-text" style="font-family: Arial, sans-serif;  font-weight: bold;   text-align: center; font-size: 24px;line-height: 90%;color: #fff8f3;">
+                            Если у вас появятся вопросы,вы можете <br>просто ответить на это письмо
+                        </div>
+
+                        <!-- Кнопка -->
+                        <table align="center" cellpadding="0" cellspacing="0" style="margin-top: 30px;" class="cta-button">
+                            <tr>
+                                <td align="center" bgcolor="#FFF286" style="border-radius: 40px; box-shadow: 0 5px 0 #D6C05F;">
+                                    <a href="mailto:nowkids@yandex.ru" style="display: inline-block; font-family: Arial, sans-serif;  font-weight: bold;  text-decoration: none; padding: 16px 90px; border-radius: 40px;
+font-size: 20px;
+line-height: 90%;
+text-align: center;
+color: #242424;">
+                                        Перейти
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- Конец кнопки -->
+                    </td>
+                </tr>
             </table>
         </td>
     </tr>
