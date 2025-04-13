@@ -1,292 +1,327 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <meta content="width=device-width" name="viewport">
-    <title>Ukids Email</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #ffffff;
-        }
-        table {
-            border-collapse: collapse;
-        }
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-            width: 100%;
-        }
-        img {
-            display: block;
-            border: 0;
-            outline: none;
-            text-decoration: none;
-        }
-        .receipt {
-            background: url('bg_2.jpg') no-repeat bottom right;
-            background-size: 90px, cover;
-            border-radius: 6px;
-            padding: 24px;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            color: #1e1e1e;
-        }
-        .receipt strong {
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 5px;
-        }
-        .desk-bg { display: table !important; }
-        .mob-bg { display: none !important; }
-
-        @media only screen and (max-width: 700px) {
-            .desk-bg { display: none !important; }
-            .mob-bg { display: table !important; }
-            .lamp {
-                display: none!important;
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta content="width=device-width" name="viewport">
+        <title>Ukids Email</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background: #ffffff;
             }
-            .banner_title {
-                padding-left: 0!important;
-                font-size: 24px!important;
+    
+            table {
+                border-collapse: collapse;
             }
+    
             .container {
-                max-width: 340px!important;
-                width: 100% !important;
+                max-width: 680px;
+                margin: 0 auto;
+                width: 100%;
             }
-
-            .mobile-center {
-                text-align: center !important;
-            }
-
-            .logo {
-                margin: 0 auto !important;
-            }
-
-            td,
-            div {
-                display: block !important;
-                width: 100% !important;
-                box-sizing: border-box !important;
-            }
-
-            .stack-table {
-                display: block !important;
-                width: 100% !important;
-            }
-
-            .stack-td {
-                display: block !important;
-                width: 100% !important;
-                text-align: center !important;
-                padding-left: 0 !important;
-                padding-right: 0 !important;
-            }
-
-            .content-padding {
-                padding-left: 10px !important;
-                padding-right: 10px !important;
-            }
-
+    
             img {
-                max-width: 100% !important;
-                height: auto !important;
+                display: block;
+                border: 0;
+                outline: none;
+                text-decoration: none;
             }
-            .stack {
-                display: block !important;
-                width: 100% !important;
-                box-sizing: border-box !important;
-                padding: 0 0px 0 20px!important;
+    
+            .receipt {
+                background: url('bg_2.jpg') no-repeat bottom right;
+                background-size: 90px, cover;
+                border-radius: 6px;
+                padding: 24px;
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                color: #1e1e1e;
             }
-            .container {
-                width: 100% !important;
+    
+            .receipt strong {
+                font-weight: bold;
+                display: inline-block;
+                margin-bottom: 5px;
             }
-            .receipt-table {
-                width: 100% !important;
-                background-size: 60px !important;
-                padding: 16px !important;
-                background: url("bg_mob_2.jpg") no-repeat!important;
-                height: 402px;
+    
+            .desk-bg {
+                display: table !important;
             }
-            .cta-block {
-                padding: 24px 20px !important;
-                background: #dcc8fb!important;
+    
+            /*.mob-bg {
+                display: none !important;
+            }*/
+            @media only screen and (max-width: 700px) {
+                .block1 {
+                    padding: 10px !important;
+                }
+    
+                .desk-bg {
+                    display: none !important;
+                }
+    
+                .mob-bg {
+                    display: table !important;
+                }
+    
+                .lamp {
+                    display: none !important;
+                }
+    
+                .banner_title {
+                    padding-left: 0 !important;
+                    font-size: 24px !important;
+                }
+    
+                .container {
+                    max-width: 340px !important;
+                    width: 100% !important;
+                }
+    
+                .mobile-center {
+                    text-align: center !important;
+                }
+    
+                .logo {
+                    margin: 0 auto !important;
+                }
+    
+                td,
+                div {
+                    display: block !important;
+                    width: 100% !important;
+                    box-sizing: border-box !important;
+                }
+    
+                .stack-table {
+                    display: block !important;
+                    width: 100% !important;
+                }
+    
+                .stack-td {
+                    display: block !important;
+                    width: 100% !important;
+                    text-align: center !important;
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                }
+    
+                .content-padding {
+                    padding-left: 10px !important;
+                    padding-right: 10px !important;
+                }
+    
+                img {
+                    max-width: 100% !important;
+                    height: auto !important;
+                }
+    
+                .stack {
+                    display: block !important;
+                    width: 100% !important;
+                    box-sizing: border-box !important;
+                    padding: 0 0px 0 20px !important;
+                }
+    
+                .container {
+                    width: 100% !important;
+                }
+    
+                .receipt-table {
+                    width: 100% !important;
+                    background-size: 60px !important;
+                    padding: 16px !important;
+                    background: url("https://nnzkhg.stripocdn.email/content/guids/CABINET_b41fd8ef281059b2bfd1f5ee9e5825cf3f541db11f1dd63401f7aa5ac2571a35/images/bg_mob_2.jpg") no-repeat !important;
+                    height: 402px;
+                }
+    
+                .cta-block {
+                    padding: 24px 20px !important;
+                    background: #dcc8fb !important;
+                }
+    
+                .cta-text {
+                    font-size: 24px !important;
+                    line-height: 90% !important;
+                    text-align: center !important;
+                    color: #242424 !important;
+                }
+    
+                .cta-button a {
+                    line-height: 100%;
+                    text-align: center;
+                    color: #242424;
+                    font-size: 20px !important;
+                    padding: 16px 89px !important;
+                }
+    
+                .sum {
+                    padding-bottom: 30px !important;
+                }
+    
+                .title_text {
+                    padding-bottom: 20px !important;
+                }
+    
+                .palitr {
+                    display: none !important;
+                }
+    
+                .bg_dashedmob_text {
+                    padding: 18px 46px 59px 29px !important;
+                    font-size: 16px !important;
+                }
             }
-
-            .cta-text {
-
-                font-size: 24px!important;
-                line-height: 90%!important;
-                text-align: center!important;
-                color: #242424!important;
-            }
-
-            .cta-button a {
-
-                line-height: 100%;
-                text-align: center;
-                color: #242424;
-                font-size: 20px !important;
-                padding: 16px 89px !important;
-            }
-
-            .sum {
-                padding-bottom: 30px!important;
-            }
-            .title_text {
-                padding-bottom: 20px!important;
-            }
-            .bg_dashedmob {
-                background: url("bg_dashedmob.png") no-repeat !important;
-            }
-            .palitr {
-                display: none!important;
-            }
-
-            .bg_dashedmob_text {
-                padding: 18px 46px 59px 29px!important;
-                font-size: 16px!important;
-            }
-
-        }
-    </style>
-</head>
-<body>
-<table class="container" align="center" width="700" cellpadding="0" cellspacing="0" style="max-width:680px;     margin-top: 10px; ">
-    <tr>
-        <td background="bg_1.jpg" style="background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 20px; padding: 30px;">
-            <table width="100%" cellpadding="0" cellspacing="0" style="font-family: Arial, sans-serif;">
-                <!-- Логотип -->
+        </style>
+        <!--[if mso]><xml>
+        <w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word">
+          <w:DontUseAdvancedTypographyReadingMail></w:DontUseAdvancedTypographyReadingMail>
+        </w:WordDocument>
+        </xml><![endif]-->
+    </head>
+    
+    <body>
+        <table class="container" align="center" width="700" cellpadding="0" cellspacing="0" style="max-width:680px;     margin-top: 10px; ">
+            <tbody>
                 <tr>
-                    <td class="mobile-center" width="50" valign="top" style="text-align: left;">
-                        <img class="logo" src="logo.png" alt="Logo" width="80px" style="border-radius: 50%; margin: 0; display: block;">
-                    </td>
-                </tr>
-
-                <!-- Контент и палитра в одном ряду -->
-                <tr>
-                    <td colspan="2">
-                        <table width="100%" cellpadding="0" cellspacing="0">
-                            <tr valign="top">
-                                <!-- Левая часть: заголовок и блок с фоном -->
-                                <td style="padding-right: 0;">
-                                    <!-- Заголовок -->
-                                    <div class="banner_title" style="padding-top: 30px; font-weight: bold; font-size: 32px; line-height: 90%; text-align:center; color: #242424;     padding-left: 80px;">
-                                        Поздравляем! Курс «Дети, которые делают уроки сами» успешно оплачен.
-                                    </div>
-
-                                    <!-- Лампа + блок с текстом -->
-                                    <table align="left" cellpadding="0" cellspacing="0" style="margin-top: 30px;">
-                                        <tr>
-                                            <td align="center" valign="middle" style="padding-right: 80px; padding-left: 10px;">
-                                                <img  class="lamp" src="lamp.png" alt="Лампочка" width="87" style="display: block;">
-                                            </td>
-                                            <td>
-
-                                                <table class="desk-bg" cellpadding="0" cellspacing="0" background="bd_dashed.png" style="background-repeat: no-repeat; background-size: cover; border-radius: 12px;">
-                                                    <tr>
-                                                        <td style="padding:23px 28px; font-weight: 600; font-size: 18px; line-height: 100%; text-align: center; color: #242424;">
-                                                            Занятия будут проходить<br>на площадке Геткурс.
-                                                        </td>
-                                                    </tr>
-                                                </table>
-
-                                                <!-- 📱 Мобильная версия -->
-                                                <table class="mob-bg" cellpadding="0" cellspacing="0" background="bg_dashedmob.png" style="display: none; background-repeat: no-repeat; background-size: cover; border-radius: 12px;">
-                                                    <tr>
-                                                        <td style="padding:13px 59px 52px 17px; font-weight: 600; font-size: 16px; line-height: 130%; text-align: center; color: #242424;">
-                                                            Занятия будут проходить<br>на площадке Геткурс.
-                                                        </td>
-                                                    </tr>
-                                                </table>
-
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-
-                                <!-- Правая часть: палитра -->
-                                <td align="right" valign="top" style="padding-top: 80px;">
-                                    <img class="palitr" src="palitr.png" alt="Палитра" width="118" style="display: block;">
-                                </td>
-                            </tr>
+                    <td class="block1" background="https://nnzkhg.stripocdn.email/content/guids/CABINET_b41fd8ef281059b2bfd1f5ee9e5825cf3f541db11f1dd63401f7aa5ac2571a35/images/bg_1_NFn.jpg" style="background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 20px; padding: 30px;">
+                        <table width="100%" cellpadding="0" cellspacing="0" style="font-family: Arial, sans-serif;">
+                            <!-- Логотип -->
+                            <tbody>
+                                <tr>
+                                    <td class="mobile-center" width="50" valign="top" style="text-align: left;"><a><img class="logo" src="https://nnzkhg.stripocdn.email/content/guids/CABINET_b41fd8ef281059b2bfd1f5ee9e5825cf3f541db11f1dd63401f7aa5ac2571a35/images/logo.png" alt="Logo" width="80px" style="border-radius: 50%; margin: 0; display: block;"></a></td>
+                                </tr><!-- Контент и палитра в одном ряду -->
+                                <tr>
+                                    <td colspan="2">
+                                        <table width="100%" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr valign="top">
+                                                    <!-- Левая часть: заголовок и блок с фоном -->
+                                                    <td style="padding-right: 0;">
+                                                        <!-- Заголовок -->
+                                                        <div class="banner_title esd-text" style="padding-top: 30px; font-weight: bold; font-size: 32px; line-height: 90%; text-align:center; color: #242424;     padding-left: 80px;">Поздравляем! Курс «Дети, которые делают уроки сами» успешно оплачен.</div><!-- Лампа + блок с текстом -->
+                                                        <table align="left" cellpadding="0" cellspacing="0" style="margin-top: 30px;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" valign="middle" style="padding-right: 80px; padding-left: 10px;"><a><img class="lamp" src="https://nnzkhg.stripocdn.email/content/guids/CABINET_b41fd8ef281059b2bfd1f5ee9e5825cf3f541db11f1dd63401f7aa5ac2571a35/images/lamp.png" alt="Лампочка" width="87" style="display: block;"></a></td>
+                                                                    <td>
+                                                                        <table class="desk-bg" cellpadding="0" cellspacing="0" background="https://nnzkhg.stripocdn.email/content/guids/CABINET_b41fd8ef281059b2bfd1f5ee9e5825cf3f541db11f1dd63401f7aa5ac2571a35/images/bd_dashed.png" style="background-repeat: no-repeat; background-size: cover; border-radius: 12px;">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td style="padding:23px 28px; font-weight: 600; font-size: 18px; line-height: 100%; text-align: center; color: #242424;" class="esd-text"> Занятия будут проходить<br>на площадке Геткурс. </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table><!-- 📱 Мобильная версия -->
+                                                                        <table class="mob-bg" cellpadding="0" cellspacing="0" background="https://nnzkhg.stripocdn.email/content/guids/CABINET_b41fd8ef281059b2bfd1f5ee9e5825cf3f541db11f1dd63401f7aa5ac2571a35/images/bg_dashedmob.png" style="display: none; margin-left:25px; background-repeat: no-repeat; background-size: cover; border-radius: 12px; width:285px; height:117px">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td style=" padding: 18px 54px 58px 20px; font-weight: 600; font-size: 16px; line-height: 130%; text-align: center; color: #242424;" class="esd-text"> Занятия будут проходить на площадке Геткурс. </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td><!-- Правая часть: палитра -->
+                                                    <td align="right" valign="top" style="padding-top: 80px;"><a><img class="palitr" src="https://nnzkhg.stripocdn.email/content/guids/CABINET_b41fd8ef281059b2bfd1f5ee9e5825cf3f541db11f1dd63401f7aa5ac2571a35/images/palitr.png" alt="Палитра" width="118" style="display: block;"></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </td>
                 </tr>
-
-            </table>
-        </td>
-    </tr>
-</table>
-
-    <table class="container" align="center" cellpadding="0" cellspacing="0" width="700" style="max-width: 680px; margin-top: 10px;
-    margin-bottom: 10px;">
-        <tr>
-            <td style="padding: 0;">
-                <table class="receipt-table" cellpadding="0" cellspacing="0" width="100%" background="bg_2.jpg" style=" background-repeat: no-repeat; background-position: bottom right; background-size: 100%;  font-family: Arial, sans-serif; padding: 0px;">
-                    <tr>
-                        <td  colspan="2" class="title_text text" style="  padding-left: 40px; padding-top: 30px;   font-weight: bold; font-size: 24px;line-height: 90%;text-align: left; color: #242424;">
-                            Квитанция об оплате
-                        </td>
-                    </tr>
-                    <tr>
-                        <!-- Левая колонка -->
-                        <td class="stack" valign="top" style="padding-right: 20px; padding-left: 40px; padding-bottom: 34px; padding-top: 20px; width: 50%;">
-                            <table cellpadding="0" cellspacing="0" width="100%">
-                                <tr><td class="text" style="padding-bottom: 11px;"><strong>Номер заказа:</strong> 0409</td></tr>
-                                <tr><td class="text" style="padding-bottom: 11px;"><strong>Состав заказа:</strong> продукт</td></tr>
-                                <tr><td class="text" style="padding-bottom: 11px;"><strong>Кол-во позиций:</strong> 1</td></tr>
-                                <tr><td class="text" style="padding-bottom: 11px;"><strong>Стоимость заказа:</strong> 3490 руб.</td></tr>
-                                <tr><td class="text" style="padding-bottom: 11px;"><strong>Оплачен:</strong> полная оплата</td></tr>
-                            </table>
-                        </td>
-
-                        <!-- Правая колонка -->
-                        <td class="stack" valign="top" style="width: 50%; padding-right: 20px;  padding-bottom: 34px; padding-top: 20px; ">
-                            <table cellpadding="0" cellspacing="0" width="100%">
-                                <tr><td class="text" style="padding-bottom: 11px;"><strong>Форма расчёта:</strong> безналичный расчет</td></tr>
-                                <tr><td class="text" style="padding-bottom: 11px;"><strong>Место расчета:</strong> место расчета</td></tr>
-                                <tr><td class="text" style="padding-bottom: 11px;"><strong>Адрес электронной почты покупателя:</strong><br>адрес</td></tr>
-                                <tr><td class="text sum" style="padding-top: 11px; font-weight: bold;">Сумма оплаты: 3490 руб.</td></tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-<table align="center" width="700" cellpadding="0" cellspacing="0" class="container" style="max-width: 680px; width: 100%;">
-    <tr>
-        <td align="center" style="padding: 0;">
-            <table  width="100%" cellpadding="0" cellspacing="0" bgcolor="#ba90ff" style="border-radius: 24px;" class="cta-block">
+            </tbody>
+        </table>
+        <table class="container" align="center" cellpadding="0" cellspacing="0" width="700" style="max-width: 680px; margin-top: 10px;
+        margin-bottom: 10px;">
+            <tbody>
                 <tr>
-                    <td align="center" style="padding: 30px 30px;">
-                        <!-- Текст -->
-                        <div class="cta-text" style="font-family: Arial, sans-serif;  font-weight: bold;   text-align: center; font-size: 24px;line-height: 90%;color: #fff8f3;">
-                            Если у вас появятся вопросы, вы можете <br>просто ответить на это письмо
-                        </div>
-
-                        <!-- Кнопка -->
-                        <table align="center" cellpadding="0" cellspacing="0" style="margin-top: 30px;" class="cta-button">
-                            <tr>
-                                <td align="center" bgcolor="#FFF286" style="border-radius: 40px; box-shadow: 0 5px 0 #D6C05F;">
-                                    <a href="mailto:nowkids@yandex.ru" style="display: inline-block; font-family: Arial, sans-serif;  font-weight: bold;  text-decoration: none; padding: 16px 90px; border-radius: 40px;
-font-size: 20px;
-line-height: 90%;
-text-align: center;
-color: #242424;">
-                                        Перейти
-                                    </a>
-                                </td>
-                            </tr>
+                    <td style="padding: 0;">
+                        <table class="receipt-table" cellpadding="0" cellspacing="0" width="100%" background="https://nnzkhg.stripocdn.email/content/guids/CABINET_b41fd8ef281059b2bfd1f5ee9e5825cf3f541db11f1dd63401f7aa5ac2571a35/images/bg_2.jpg" style=" background-repeat: no-repeat; background-position: bottom right; background-size: 100%;  font-family: Arial, sans-serif; padding: 0px;">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" class="title_text text esd-text" style="  padding-left: 40px; padding-top: 30px;   font-weight: bold; font-size: 24px;line-height: 90%;text-align: left; color: #242424;">Квитанция об оплате</td>
+                                </tr>
+                                <tr>
+                                    <!-- Левая колонка -->
+                                    <td class="stack" valign="top" style="padding-right: 20px; padding-left: 40px; padding-bottom: 34px; padding-top: 20px; width: 50%;">
+                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text esd-text" style="padding-bottom: 11px;"><strong>Номер заказа:</strong> 0409</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text esd-text" style="padding-bottom: 11px;"><strong>Состав заказа:</strong> продукт</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text esd-text" style="padding-bottom: 11px;"><strong>Кол-во позиций:</strong> 1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text esd-text" style="padding-bottom: 11px;"><strong>Стоимость заказа:</strong> 3490 руб.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text esd-text" style="padding-bottom: 11px;"><strong>Оплачен:</strong> полная оплата</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td><!-- Правая колонка -->
+                                    <td class="stack" valign="top" style="width: 50%; padding-right: 20px;  padding-bottom: 34px; padding-top: 20px; ">
+                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text esd-text" style="padding-bottom: 11px;"><strong>Форма расчёта:</strong> безналичный расчет</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text esd-text" style="padding-bottom: 11px;"><strong>Место расчета:</strong> место расчета</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text esd-text" style="padding-bottom: 11px;"><strong>Адрес электронной почты покупателя:</strong><br>адрес</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text sum esd-text" style="padding-top: 11px; font-weight: bold;">Сумма оплаты: 3490 руб.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
-                        <!-- Конец кнопки -->
                     </td>
                 </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-</body>
+            </tbody>
+        </table>
+        <table align="center" width="700" cellpadding="0" cellspacing="0" class="container" style="max-width: 680px; width: 100%;">
+            <tbody>
+                <tr>
+                    <td align="center" style="padding: 0;">
+                        <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#ba90ff" style="border-radius: 24px;" class="cta-block">
+                            <tbody>
+                                <tr>
+                                    <td align="center" style="padding: 30px 30px;">
+                                        <!-- Текст -->
+                                        <div class="cta-text esd-text" style="font-family: Arial, sans-serif;  font-weight: bold;   text-align: center; font-size: 24px;line-height: 90%;color: #fff8f3;">Если у вас появятся вопросы, вы можете<br>просто ответить на это письмо</div><!-- Кнопка -->
+                                        <table align="center" cellpadding="0" cellspacing="0" style="margin-top: 30px;" class="cta-button">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="center" bgcolor="#FFF286" style="border-radius: 40px; box-shadow: 0 5px 0 #D6C05F;"><a href="mailto:nowkids@yandex.ru" style="display: inline-block; font-family: Arial, sans-serif;  font-weight: bold;  text-decoration: none; padding: 16px 90px; border-radius: 40px;
+    font-size: 20px;
+    line-height: 90%;
+    text-align: center;
+    color: #242424;"> Перейти </a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table><!-- Конец кнопки -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
 </html>
